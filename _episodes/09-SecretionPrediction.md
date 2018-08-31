@@ -1,5 +1,5 @@
 ---
-title: "Prediction of secrete proteins"
+title: "Prediction of secreted proteins"
 teaching: 10
 exercises: 30
 questions:
