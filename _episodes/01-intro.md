@@ -23,10 +23,6 @@ The lessons aim to introduce and reinforce basic skills in the Unix shell and Mi
 ### Data Management and Organization
 - Unix Shell (command-line: ls, cd, mkdir, cp, rm, wc, grep, cut, columns, head, tail, less etc,)
 
-### Data Cleaning and visualization
-- Quality control of high-throughput sequence data
-- Trimming of low quality data
-
 ### Microbial Genomics
 - Assembly of high-throughput sequence data
 - Annotation of genomes
