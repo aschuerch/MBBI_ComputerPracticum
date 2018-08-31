@@ -13,7 +13,7 @@ keypoints:
 - "After the first two days you will have some familiarity with working on the command line, data management, cleaning and visualization, automation and scripting"
 ---
 
-The lessons of the **first two days** introduce and reinforce basic skills in the Unix shell and R, and are designed for learners with no programming experience. The general topics and skills covered include:
+The lessons aim to introduce and reinforce basic skills in the Unix shell and Microbial Genomics and are designed for learners with no programming experience. The general topics and skills covered include:
 
 ### Interacting with Computers
 - Could Computing
@@ -24,18 +24,16 @@ The lessons of the **first two days** introduce and reinforce basic skills in th
 - Unix Shell (command-line: ls, cd, mkdir, cp, rm, wc, grep, cut, columns, head, tail, less etc,)
 
 ### Data Cleaning and visualization
-- FastQC - quality control of high-throughput sequence data
-- Seqtk - trimming of low quality data
+- Quality control of high-throughput sequence data
+- Trimming of low quality data
 
 ### Microbial Genomics
-- Assembly
-- Annotation
+- Assembly of high-throughput sequence data
+- Annotation of genomes
 - Prediction of secreted proteins
 
 ## Overview of our Data Set and Narrative
 
-TBD
-
-Microbes are ideal organisms for exploring 'Long-term Evolution Experiments' (LTEEs) - thousands of generations can be generated and stored in a way that would be virtually impossible for more complex eukaryotic systems. In [Lenski et.al.](http://www.nature.com/nature/journal/v489/n7417/full/nature11514.html), 12 populations of *Escherichia coli* were propagated for more than 40,000 generations in a glucose-limited minimal medium. This medium was supplemented with citrate which *E. coli* cannot metabolize in the aerobic conditions of the experiment. Sequencing of the populations at regular time points reveals that spontaneous citrate-using mutants (Cit+) appeared in a population of *E.coli* (designated Ara-3) at around 31,000 generations. It should be noted that spontaneous Cit+ mutants are extraordinarily rare - inability to metabolize citrate is one of the defining characters of the *E. coli* species. Eventually, Cit+ mutants became the dominate population as the experimental growth medium contained a high concentration of citrate relative to glucose. 
+*Escherichia coli* strain K-12 holds a key position as a model organism in studies of molecular biology, biochemistry, genetics and biotechnology. The sequence we will be using was cited by several [publications](https://www.ncbi.nlm.nih.gov/pmc/?term=ERX008638+or+ERR022075), especially in the context of genome assembly. Here, we will trim, assembly and annotate the genome of *E. coli* K-12 in order to determine proteins that are secreted.
 
 {% include links.md %}
