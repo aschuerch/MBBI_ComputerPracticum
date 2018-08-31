@@ -9,7 +9,7 @@ The lessons use the
 [Data Carpentry]({{ site.dc_site }}) lesson template and are partially based on the [Data Carpentry Genomics lesson]({{ site.dc_site }}).
 
 
-> ## Schedule:
+> ## Schedule
 > 
 > 
 > 1.  Thursday,15-11-2018: Setup
