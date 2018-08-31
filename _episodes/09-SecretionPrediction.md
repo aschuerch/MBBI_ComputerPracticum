@@ -1,16 +1,14 @@
 ---
-title: "Assessing Read Quality"
-teaching: 30
-exercises: 20
+title: "Prediction of secrete proteins"
+teaching: 10
+exercises: 30
 questions:
-- "How can I describe the quality of my data?"
+- "How can I predict proteins that are secreted?"
 objectives:
-- "Explain how a FASTQ file encodes per-base quality scores."
-- "Interpret a FastQC plot summarizing per-base quality across all reads."
-- "Use `for` loops to automate operations on multiple files."
+- "Have a list of potential secreted proteins."
 keypoints:
-- "Quality encodings vary across sequencing platforms."
-- "`for` loops let you perform the same set of operations on multiple files with a single command."
+- "Q"
+- " "
 ---
 
 # Bioinformatics workflows
