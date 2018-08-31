@@ -1,7 +1,7 @@
 ---
 title: "Prediction of secreted proteins"
 teaching: 10
-exercises: 30
+exercises: 60
 questions:
 - "How can I predict proteins that are secreted?"
 objectives:
