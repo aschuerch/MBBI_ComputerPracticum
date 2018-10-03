@@ -17,15 +17,15 @@ keypoints:
 
 ## Annotation
 
-Now that we have assembled the data into contigs the next natural step to do is annotation of the data. The contigs we assembled contain different genomic features. The process of identifying and labelling those features is called genome annotation.
+Now that we have assembled the sequencing reads into contigs the next step to do is annotation of the sequences. The contigs we assembled contain different genomic features. The process of identifying and labelling those features is called genome annotation.
 
 Genome annotation includes prediction of protein-coding genes, as well as other functional genome units such as structural RNAs, tRNAs, small RNAs, pseudogenes, control regions, direct and inverted repeats, insertion sequences, transposons and other mobile elements. It starts by identifying open reading frames (ORFs). Predicted sequences are further analysed to search for similarity to known elements, for example with BLAST.
 
 
-Have a look at the 50 first lines of your genomes using head. In this example the folder with assembly ERR029207 is used. This example assumes your assembly outputs from SPAdes are in the folder "assembly".
+Have a look at the 50 first lines of your genome.
 
 ~~~
-$ head -n50 ~/assembly/ERR022075_assembly/scaffolds.fasta
+$ head -n50 ~/assembly/E_coli/ERR022075_assembly/scaffolds.fasta
 ~~~
 {: .source}
 
@@ -39,8 +39,7 @@ Let's copy the first contig including the header by moving over it with the mous
 > 
 > Search for the longest ORF. If you have found it, click on 'Mark'. Submit the longest ORF to BLAST.
 > 
-> How will this ORF be annotated? Is it a gene or something else? What does the gene do? Fill your annotation into the
-> [table]() under the header ERR022075_ORF.
+> How will this ORF be annotated? Is it a gene or something else? What does the gene do?
 > 
 {: .challenge}
 
@@ -52,19 +51,19 @@ A range of programs are available for these tasks but here we will use PROKKA, w
 
 PROKKA automates the process of locating ORFs and RNA regions on contigs, translating ORFs to protein sequences, searching for protein homologs and producing standard output files. For gene finding and translation, PROKKA makes use of the program Prodigal. Homology searching (via BLAST and HMMER) is then performed using the translated protein sequences as queries against a set of public databases (CDD, PFAM, TIGRFAM) as well as custom databases that come with PROKKA.
 
-The names of the contigs produced by SPades are quite long. PROKKA needs name which are shorter than 20 characters. We will therefore shorten these names first by making a copy of the contig files. Then it renames the long word "NODE" to the letter "C" in your file and it outputs the resulting fasta file to a file called ERR022075.fasta.
+The names of the contigs produced by SPades are quite long. PROKKA needs name which are shorter than 20 characters. We will therefore shorten these names first by making a copy of the contig files. Then it renames the word "NODE" to the letter "C" in your file and it outputs the resulting fasta file to a file called ERR022075.fasta.
 
 
 ~~~
-$ cd ~/assembly/ERR022075_assembly
-cut -f 1,2 -d "_" scaffolds.fasta | sed s/NODE/C/g > ERR022075.fasta
+$ cd ~/assembly/E_coli/ERR022075_assembly
+cut -f 1,2 -d "_" scaffolds.fasta | sed s/NODE/C/g > ERR022075.fasta  
 > done
 ~~~
 
 Let's see what this has done. First let's have a look at the original files.
 
 ~~~
-$ head -n10 genome1/scaffolds.fasta
+$ head -n10 ERR022075/scaffolds.fasta
 ~~~
 {: .bash}
 
@@ -85,7 +84,7 @@ CGGTGATGTTGGCCGGCGTGATACCGGCCAGCGACTGACCGGGACTGATAATGCCAGGAC
 Now, let's inspect the new file
 
 ~~~
-$ head -n10 genome1.fasta
+$ head -n10 ERR022075.fasta
 ~~~
 {: .bash}
 
@@ -106,7 +105,7 @@ CGGTGATGTTGGCCGGCGTGATACCGGCCAGCGACTGACCGGGACTGATAATGCCAGGAC
 The header was shortened to less than 20 characters. It is important that each header is still unique. We can check this by inspecting a few headers.
 
 ~~~
-$ grep  ">" genome1.fasta
+$ grep  ">" ERR022075.fasta
 ~~~
 {: .bash}
 
@@ -151,7 +150,7 @@ The parameter --prefix assigns the sample name as a prefix to all files. If we o
 
 ~~~
 $ cd ~/
-prokka --outdir annotation/ERR022075 --prefix $sample assembly/ERR022075.fasta --cpus 1
+prokka --outdir annotation/ERR022075 --prefix $sample assembly/E_coli/ERR022075.fasta --cpus 1
 done
 ~~~
 {: .bash}
@@ -168,8 +167,7 @@ The .txt files contain some statistics on how many annotated genes are found etc
 
 > ## Challenge: How many coding regions did PROKKA find in the contigs??
 >
-> Find out how many coding regions there are in the *E. coli* isolate. Enter your solution in the
-> [table]() under the head 'Number of CDS'
+> Find out how many coding regions there are in the *E. coli* isolate. 
 >
 > Hint:
 > ~~~
@@ -195,18 +193,18 @@ if the solution differs?
 
 > ## Challenge: Annotation of *S.aureus* 
 >
-> In addition to *E.coli*, there is an assembled, but unannotated genome of *S.aureus* in the annotation folder. Can you annotate this genome as well?
+> In addition to *E.coli*, there is an assembled, but unannotated genome of *S.aureus* in the assembly folder. Can you annotate this genome as well?
 
 > Hint:
 > ~~~
-> $ cd ~/annotation/S_aureus
+> $ cd ~/assembly/S_aureus
 > ~~~
 > > ## Solution
 > >
 > > 
 > > ~~~
-> > $ cd ~/annotation/S_aureus 
-> > prokka --outdir annotation/S_aureus/ERR022075 --prefix $sample assembly/S_aureus/22075.fasta --cpus 1
+> > $ cd ~/assembly/S_aureus 
+> > prokka --outdir annotation/S_aureus/... --prefix $sample assembly/S_aureus/.....fasta --cpus 1
 > > ~~~
 > > {: .output}
 > {: .solution}
