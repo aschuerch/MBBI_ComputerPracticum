@@ -3,11 +3,8 @@ title: "Sequence assembly"
 exercises: 60
 questions:
 - "How can the information in the sequencing reads be reduced?"
-- "What are the different methods for assembly?"
 objectives:
-- "Understand differences between assembly methods"
 - "Assemble the short reads"
-- "What is the effect of different k-mer sizes"
 keypoints:
 - "Assembly is a process which aligns and merges fragments from a longer DNA sequence in order to reconstruct the original sequence."
 - "k-mers are short fragments of DNA of length k"
