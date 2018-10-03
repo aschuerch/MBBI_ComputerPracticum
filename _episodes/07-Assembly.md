@@ -22,11 +22,8 @@ The assembler we will run is [SPAdes](http://cab.spbu.ru/software/spades/). SPAd
 To run SPAdes we will use the spades.py command with the --only-assembler option as the reads have already been trimmed, -o for the output folder, -1 for the path to the forward reads, -2 for the path to the reverse reads. To speed up the process, we will be using only one k-mer size of 55 basepair.
 
 ~~~
+$ cd ~/assembly/E_coli
 $ spades.py -1 ERR022075_1.trimmed.fastq -2 ERR022075_2.trimmed.fastq -k 55 -o ERR022075
-$ cd ~/assembly
-$ ls 
-$ cd ERR026473
-$ ls
 ~~~
 {: .bash}
 
