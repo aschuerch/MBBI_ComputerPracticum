@@ -3,7 +3,7 @@ title: "Logging onto Cloud"
 teaching: 5
 exercises: 5
 questions:
-- How do I connect to an AWS instance?
+- How do I connect to a cloud instance?
 objectives:
 - Log onto to a running instance
 - Log off from a running instance
@@ -36,19 +36,10 @@ window.onload = set_page_view_defaults;
 
 ## Important Note
 
-This lesson covers how to log into, and out of, an *already running* Amazon instance.
+This lesson covers how to log into, and out of, an *already running* cloud instance.
 
 
-## Background to AWS
-
-Setting up a new AWS instance requires a credit card, an AWS account, and up to
-a day of verification time. To save time, your instructor launched a remote computer (instance) for you prior
-to the workshop, and connected it to our lesson data. You've already logged into it at
-least once, but now that you're more comfortable with the command line, lets go back and talk about how it all works.
-
-
-We have a pre-configured copy of the data needed for this workshop that is always available
-to attach to a new instance on Amazon, as long as you have an account, and the log-in credentials to open it.
+## Background to cloud computing
 
 To access the pre-configured workshop data, you'll need to use our log-in credentials (user name and password). A user name will be assigned to you at the workshop. In the following, always replace dcuser with your user name 
 and the password with the password assigned to you.
@@ -66,7 +57,7 @@ An IP address is essentially the numerical version of a web address like www.ama
 
 Recall that cloud computing is about choice. You can rent just a single processor on a large computer
 for a small project, or you can rent hundreds of processors spread across multiple computers for
-a large project. In either case, once you rent the collection of processors, Amazon will
+a large project. In either case, once you rent the collection of processors, the cloud provider will
 present your rental to you as if it was a single computer. So, the physical computers that host your
 instances don't really move, *but* every time you launch a new instance, it will have a new IP address.
 
