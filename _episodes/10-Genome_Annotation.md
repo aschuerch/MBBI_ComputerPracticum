@@ -4,6 +4,7 @@ teaching: 10
 exercises: 50
 questions:
 - "How are proteins predicted from a DNA sequence?"
+- "How many proteins are found in *E.coli*?"
 objectives:
 - "Search for open reading frames"
 - "Predict a protein from an open reading frame"
@@ -25,7 +26,7 @@ Genome annotation includes prediction of protein-coding genes, as well as other 
 Have a look at the 50 first lines of your genome.
 
 ~~~
-$ head -n50 ~/assembly/E_coli/ERR022075_assembly/scaffolds.fasta
+$ head -n50 ~/112018_Secretome/assembly/ERR022075/scaffolds.fasta
 ~~~
 {: .source}
 
@@ -55,7 +56,7 @@ The names of the contigs produced by SPades are quite long. PROKKA needs name wh
 
 
 ~~~
-$ cd ~/assembly/E_coli/ERR022075_assembly
+$ cd ~/112018_Secretome/assembly/ERR022075
 cut -f 1,2 -d "_" scaffolds.fasta | sed s/NODE/C/g > ERR022075.fasta  
 > done
 ~~~
@@ -139,7 +140,7 @@ These are the last few lines of our output. Every line has a unique number.
 We still need to make a new folder to contain our annotation results.
 
 ~~~
-$ cd ~/
+$ cd ~/112018_Secretome
 $ mkdir annotation
 ~~~
 {: .bash}
@@ -149,8 +150,8 @@ The parameter --outdir tells PROKKA which output directory to write to. This nee
 The parameter --prefix assigns the sample name as a prefix to all files. If we ommit this, all output files would have the same name. The parameter --cpus 1 tells it to use 1 cpu.
 
 ~~~
-$ cd ~/
-prokka --outdir annotation/ERR022075 --prefix $sample assembly/E_coli/ERR022075.fasta --cpus 1
+$ cd 
+prokka --outdir ~/112018_Secretome/annotation/ERR022075 --prefix $sample ~/112018_Secretome/assembly/ERR022075.fasta --cpus 1
 done
 ~~~
 {: .bash}
@@ -179,7 +180,7 @@ The .txt files contain some statistics on how many annotated genes are found etc
 > >
 > > 
 > > ~~~
-> > $ cd ~/annotation/
+> > $ cd ~/112018_Secretome/annotation/
 > > $ grep CDS */*.txt
 > >  
 > > ERR326690/ERR326690.txt:CDS: 2047
@@ -193,7 +194,7 @@ if the solution differs?
 
 > ## Challenge: Annotation of *S.aureus* 
 >
-> In addition to *E.coli*, there is an assembled, but unannotated genome of *S.aureus* in the assembly folder. Can you annotate this genome as well?
+> In addition to *E.coli*, there is an assembled, but unannotated genome of *S.aureus* on your remote machine. Can you annotate this genome as well?
 
 > Hint:
 > ~~~
@@ -204,7 +205,7 @@ if the solution differs?
 > > 
 > > ~~~
 > > $ cd ~/assembly/S_aureus 
-> > prokka --outdir annotation/S_aureus/... --prefix $sample assembly/S_aureus/.....fasta --cpus 1
+> > prokka --outdir /112018_Secretome/annotation/S_aureus/... --prefix $sample ~/assembly/S_aureus/.....fasta --cpus 1
 > > ~~~
 > > {: .output}
 > {: .solution}
