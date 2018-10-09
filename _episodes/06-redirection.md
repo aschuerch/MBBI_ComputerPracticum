@@ -449,15 +449,15 @@ Now we will run seqtk trimfq on our data. To begin, create the folder that will 
 ~~~
 $ cd ~/112018_Secretome
 $ mkdir trimmed
-$ mkdir trimmed/E_coli
-$ cd ~/112018_Secretome/untrimmed/E_coli
+$ mkdir trimmed
+$ cd ~/112018_Secretome/reads
 ~~~
 {: .bash}
 
 We are going to run seqtk on one sample giving it an error rate threshold of 0.01 which indicates the base call accuracy. We request that, after trimming, the chances that a base is called incorrectly are only 1 in 10000.
 
 ~~~
-$ seqtk trimfq -q 0.01 ERR022075_1.fastq.gz > ~/112018_Secretome/trimmed/E_coli/ERR022075_1.trimmed.fastq
+$ seqtk trimfq -q 0.01 ERR022075_1.fastq> ~/112018_Secretome/trimmed/ERR022075_1.trimmed.fastq
 ~~~
 {: .bash}
 
@@ -470,8 +470,8 @@ Notice that we needed to redirect the output to a file. If we don't do that, the
 > 
 > > ## Solution
 > > 
-> > `$ cd ~/112018_Secretome/untrimmed/E_coli`
-> > `$ seqtk trimfq -q 0.01 ERR022075_2.fastq.gz > ~/112018_Secretome/trimmed/E_coli/ERR022075_2.trimmed.fastq`
+> > `$ cd ~/112018_Secretome/reads`
+> > `$ seqtk trimfq -q 0.01 ERR022075_2.fastq > ~/112018_Secretome/ERR022075_2.trimmed.fastq`
 > >
 > {: .solution}
 {: .challenge}
