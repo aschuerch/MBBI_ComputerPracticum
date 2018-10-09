@@ -151,7 +151,7 @@ The parameter --prefix assigns the sample name as a prefix to all files. If we o
 
 ~~~
 $ cd 
-prokka --outdir ~/112018_Secretome/annotation/ERR022075 --prefix $sample ~/112018_Secretome/assembly/ERR022075.fasta --cpus 1
+prokka --outdir ~/112018_Secretome/annotation/ERR022075 --prefix $sample ~/112018_Secretome/assembly/ERR022075/ERR022075.fasta --cpus 1
 ~~~
 {: .bash}
 
