@@ -22,8 +22,8 @@ The assembler we will run is [SPAdes](http://cab.spbu.ru/software/spades/). SPAd
 First of all, let's make an an *E.coli* folder in the assembly folder of the project
 
 ~~~
-$ cd ~/112018_Secretome/assembly
-$ mkdir E_coli
+$ cd ~/112018_Secretome
+$ mkdir assembly
 ~~~
 {: .bash}
 
@@ -32,8 +32,8 @@ $ mkdir E_coli
 To run SPAdes we will use the spades.py command with the --only-assembler option as the reads have already been trimmed, -o for the output folder, -1 for the path to the forward reads, -2 for the path to the reverse reads. To speed up the process, we will be using only two k-mer sizes of 33 and 55 basepair.
 
 ~~~
-$ cd ~/112018_Secretome/trimmed/E_coli
-$ spades.py -1 ERR022075_1.trimmed.fastq -2 ERR022075_2.trimmed.fastq -k 33,55 -o ~/112018_Secretome/E_coli/assembly/ERR022075
+$ cd ~/112018_Secretome/trimmed
+$ spades.py -1 ERR022075_1.trimmed.fastq -2 ERR022075_2.trimmed.fastq -k 33,55 -o ~/112018_Secretome/assembly/ERR022075
 ~~~
 {: .bash}
 
