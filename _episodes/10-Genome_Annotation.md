@@ -150,8 +150,7 @@ The parameter --outdir tells PROKKA which output directory to write to. This nee
 The parameter --prefix assigns the sample name as a prefix to all files. If we ommit this, every PROKKA output file would have the same name. The parameter --cpus 1 tells it to use 1 cpu.
 
 ~~~
-$ cd 
-prokka --outdir ~/112018_Secretome/annotation/ERR022075 --prefix ERR022075 ~/112018_Secretome/assembly/ERR022075/ERR022075.fasta --cpus 1
+$ prokka --outdir ~/112018_Secretome/annotation/ERR022075 --prefix ERR022075 ~/112018_Secretome/assembly/ERR022075/ERR022075.fasta --cpus 1
 ~~~
 {: .bash}
 
@@ -182,7 +181,7 @@ The .txt files contain some statistics on how many annotated genes are found etc
 > > $ cd ~/112018_Secretome/annotation/
 > > $ grep CDS */*.txt
 > >  
-> > ERR326690/ERR326690.txt:CDS: 2047
+> > CDS: 4235
 > > ~~~
 > > {: .output}
 > {: .solution}
