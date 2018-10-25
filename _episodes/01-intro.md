@@ -11,8 +11,13 @@ objectives:
 keypoints:
 - "After the practicum you will have some familiarity with working on the command line and will have a list of secreted proteins of two different species"
 ---
+# Bioinformatics
 
-The lessons aim to introduce basic skills in the Unix shell and Microbial Genomics and are designed for learners with no programming experience. The general topics and skills covered include:
+Many bioinformatics tools can only be used through a command line interface, or have extra capabilities in the command line version that are not available in a graphical user interface. In these lessons we will therefor first introduce the Unix shell and than apply this knowlegde to the assembly of a bacterial genome and to making predictions about genes on the genome.
+
+## Introduction to the command line
+
+The lessons aim to introduce basic skills in the Unix shell and are designed for learners with no programming experience. The general topics and skills covered include:
 
 ### Interacting with Computers
 - Could Computing
@@ -21,13 +26,21 @@ The lessons aim to introduce basic skills in the Unix shell and Microbial Genomi
 ### Data Management and Organization
 - Unix Shell (command-line: ls, cd, mkdir, cp, rm, wc, grep, cut, columns, head, tail, less etc,)
 
+
+## Predict secreted proteins from sequenced DNA
+
+The sequence of microbial genomes can be used to predict proteins that are secreted by bacteria. However, before we obtain a bacterial genome sequence from DNA sequencing data, we have to clean the data and assemble it.
+
 ### Microbial Genomics
+
+- Trimming of sequencing data
 - Assembly of high-throughput sequence data
 - Annotation of genomes
 - Prediction of secreted proteins
 
 ## Overview of our Data Set
-
-The sequence of microbial genomes can be used to predict proteins that are secreted by bacteria. *Escherichia coli* strain K-12 holds a key position as a model organism in studies of molecular biology, biochemistry, genetics and biotechnology. The sequence we will be using was cited by several [publications](https://www.ncbi.nlm.nih.gov/pmc/?term=ERX008638+or+ERR022075), especially in the context of genome assembly. Here, we will trim, assemble and annotate the genome of *E. coli* K-12 and will predict secreted proteins from it as well as from an assembled genome of *S. aureus*.
+ *Escherichia coli* strain K-12 holds a key position as a model organism in studies of molecular biology, biochemistry, genetics and biotechnology. The sequence we will be using was cited by several [publications](https://www.ncbi.nlm.nih.gov/pmc/?term=ERX008638+or+ERR022075), especially in the context of genome assembly. Here, we will trim, assemble and annotate the genome of *E. coli* K-12 and will predict secreted proteins from it. 
+ 
+In addition, we will also be using an already assembled genome of a *Staphylococcus aureus* isolate which is an [lineage often associated with methicillin resistance (MRSA)](https://www.ncbi.nlm.nih.gov/pmc/?term=Staphylococcus+aureus+%2B+USA300)
 
 {% include links.md %}
