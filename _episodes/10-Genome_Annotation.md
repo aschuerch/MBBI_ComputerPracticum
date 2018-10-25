@@ -59,7 +59,6 @@ The names of the contigs produced by SPades are quite long. PROKKA needs name wh
 $ export LC_ALL=C
 $ cd ~/112018_Secretome/assembly/ERR022075
 $ cut -f 1,2 -d "_" scaffolds.fasta | sed s/NODE/C/g > ERR022075.fasta  
-> done
 ~~~
 
 Let's see what this has done. First let's have a look at the original files.
