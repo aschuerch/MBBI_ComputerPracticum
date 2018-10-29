@@ -157,7 +157,7 @@ $ prokka --outdir ~/112018_Secretome/annotation/ERR022075 --prefix ERR022075 ~/1
 Let's check the output:
 
 ~~~
-$ cd ~/annotation/
+$ cd ~/112018_Secretome/annotation/
 $ cat */*.txt
 ~~~
 {: .bash}
@@ -196,14 +196,14 @@ if the solution differs?
 
 > Hint:
 > ~~~
-> $ cd ~/assembly/S_aureus
+> $ cd ~/112018_Secretome/assembly/S_aureus
 > ~~~
 > > ## Solution
 > >
 > > 
 > > ~~~
-> > $ cd ~/assembly/S_aureus 
-> > prokka --outdir /112018_Secretome/annotation/S_aureus/... --prefix $sample ~/assembly/S_aureus/.....fasta --cpus 1
+> > $ cd ~/112018_Secretome/assembly/S_aureus 
+> > prokka --outdir ~/112018_Secretome/annotation/S_aureus --prefix S_aureus ~/112018_Secretome/assembly/S_aureus/NC_007793.1.fasta --cpus 1
 > > ~~~
 > > {: .output}
 > {: .solution}
