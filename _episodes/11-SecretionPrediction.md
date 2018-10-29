@@ -105,6 +105,8 @@ Move files between computers by drawing and dropping them in the desired locatio
 Tip: You can resize windows in FileZilla for easier viewing.
 
 
+../fig/filezilla.png
+
 ### Uploading Data to your Virtual Machine
 
 If you're using a PC, we recommend you use the *PSCP* program. This program is from the same suite of
