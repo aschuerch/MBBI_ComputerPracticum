@@ -54,7 +54,7 @@ Good documentation is key to avoiding this issue, and luckily enough, recording 
 For this project, some files have been organized already in this directory tree:
 
 
-[directory_tree](../fig/MMBI_files.png)
+![directory_tree](../fig/MMBI_files.png)
 
 We will add more files and directories as we go.
 
