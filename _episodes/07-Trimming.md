@@ -13,25 +13,64 @@ keypoints:
 - "Spend the time to organize your file system. Your future self will thank you!"
 ---
 
-Let's start to work on the *E.coli* genome. We are going to follow this workflow:
+# Pipelines
 
-../fig/MMBI_schemes.png
+Let's start to work on the prediction of secreted proteins.
+
+When working with high-throughput sequencing data, the raw reads you get off of the sequencer will need to pass through a number of different tools in order to generate your final desired output. The execution of this set of tools in a specified order is commonly referred to as a workflow or a pipeline.
+
+An example of the workflow we will be using for our secreted protein prediction is provided below with a brief description of each step.
+
+../fig/MMBI_scheme.png
+
+1. Quality control - Trimming and/or filtering reads
+2. Assembly of the trimmed reads into contigs
+3. Translation of open reading frames, annotation of genes
+5. Prediction of secreted proteins
+
+Workflows in bioinformatics adopt a plug-and-play approach in that the output of one tool can be easily
+used as input to another tool without any extensive configuration. Having standards for data formats is what 
+makes this feasible. Standards ensure that data is stored in a way that is generally accepted and agreed upon 
+within the community. The tools that are used to analyze data at different stages of the workflow are therefore 
+built under the assumption that the data will be provided in a specific format. 
+
+# Project organization
+
+Project organization is one of the most important parts of a sequencing project, and yet is often overlooked amidst the excitement of getting a first look at new data. Of course, while it’s best to get yourself organized before you even begin your analyses, it’s never too late to start, either.
+
+You should approach your sequencing project similarly to how you do a biological experiment and this ideally begins with experimental design. We’re going to assume that you’ve already designed a beautiful sequencing experiment to address your biological question, collected appropriate samples, and that you have enough statistical power to answer the questions you’re interested in asking. These steps are all incredibly important, but beyond the scope of our course. For all of those steps (collecting specimens, extracting DNA, prepping your samples) you’ve likely kept a lab notebook that details how and why you did each step. However, the process of documentation doesn’t stop at the sequencer!
+
+Genomics projects can quickly accumulate hundreds of files across tens of folders. Every computational analysis you perform over the course of your project is going to create many files, which can especially become a problem when you’ll inevitably want to run some of those analyses again. For instance, you might have made significant headway into your project, but then have to remember the PCR conditions you used to create your sequencing library months prior.
+
+Other questions might arise along the way:
+
+    What were your best alignment results?
+    Which folder were they in: Analysis1, AnalysisRedone, or AnalysisRedone2?
+    Which quality cutoff did you use?
+    What version of a given program did you implement your analysis in?
+
+Good documentation is key to avoiding this issue, and luckily enough, recording your computational experiments is even easier than recording lab data. Copy/Paste will become your best friend, sensible file names will make your analysis understandable by you and your collaborators, and writing the methods section for your next paper will be easy! Remember that in any given project of yours, it’s worthwhile to consider a future version of yourself as an entirely separate collaborator. The better your documenation is, the more this ‘collaborator’ will feel indebted to you!
+
+For this project, some files have been organized already in this directory tree:
 
 
+../fig/MMBI_files.png
 
-## Trimming and more practice with pipes
+We will add more files and directories as we go.
 
-Let's use the tools we've added to our tool kit so far, along with a few new ones, to trim our short read sequences. 
+# Trimming and more practice with pipes
+
+Let's use the tools we've added to our tool kit so far, along with a few new ones, to trim short read sequences. 
 First, let's navigate to the correct directory.
 
 ~~~
 $ cd
-$ cd assembly
+$ cd ~/112018/reads
 $ ls
 ~~~
 {: .bash}
 
-These files contain the short read data of *E.coli*. Before we start the assemble the short reads into contigs, we have to trim the low quality sequences away. 
+These files contain the short read data of *E.coli*. Before we start to assemble the short reads into contigs, we have to trim the low quality sequences away. 
 
 
 # Cleaning Reads
@@ -102,7 +141,6 @@ Now we will run seqtk trimfq on our data. To begin, create the folder that will 
 
 ~~~
 $ cd ~/112018_Secretome
-$ mkdir trimmed
 $ mkdir trimmed
 $ cd ~/112018_Secretome/reads
 ~~~
