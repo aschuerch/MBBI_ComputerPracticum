@@ -11,6 +11,19 @@ keypoints:
 - " "
 ---
 
+# Protein secretion prediction
+
+SignalP is a neural network–based method which can discriminate signal peptides from transmembrane regions. A signal peptide is the N-terminal part of a protein that is targeted to the secretory pathway in pro- and eukaryotes.  In prokaryotes, translocation takes place across the cytoplasmic membrane (inner membrane in Gram-negative bacteria), and the process can happen during or after translation.
+
+However the presence of a signal peptide does not necessarily mean that the protein is secreted to the extracellular environment—it only means that it enters the secretory pathway.  The protein could have one or more transmembrane helices downstream of the signal peptide and therefore be retained in the membrane. In Gram-negative bacteria, the protein could be retained in the peri
+plasm, or be inserted into the outer membrane as a β-barrel transmembrane protein. In Gram-positive bacteria, the protein could be attached to the cell wall. In general signal peptides have three regions: 
+ - an N-terminal n-region of variable length characterized by positive charge
+ - a central h-region of at least 7 hydrophobic residues\
+ - a C-terminal c-region of typically 3-7 polar residues. 
+ 
+Positions –1 and –3 relative to the cleavage site are occupied by small uncharged residues; in bacteria predominantly Alanine. SPs of Gram-positive bacteria tend to be longer than those of Gram-negative bacteria.
+
+
 # Bioinformatics workflows
 
 When working with high-throughput sequencing data, the raw reads you get off of the sequencer will need to pass
