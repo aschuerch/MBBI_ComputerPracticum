@@ -27,7 +27,7 @@ However the presence of a signal peptide does not necessarily mean that the prot
 Positions –1 and –3 relative to the cleavage site are occupied by small uncharged residues; in bacteria predominantly Alanine. SPs of Gram-positive bacteria tend to be longer than those of Gram-negative bacteria.
 
 
-# Running signalP
+## Running signalP
 
 SignalP takes amino acid sequences in fasta format. These are available from the annotation output as .faa files. Note that any letters not corresponding to the twenty standard amino acids, e.g. ‘U’, ‘B’, or ‘Z’, will be converted to ‘X’ and treated as unknown amino acids. Furthermore it is important to choose the correct organism group — Eukaryotes, Gram-negative 
 bacteria, or Gram-positive bacteria with the -t option. The -m option will give a fasta output of the mature sequence (after cleavage of the signal peptide).
@@ -68,7 +68,7 @@ $ signalp -t gram- -m Ecoli.fasta  ~/112018_Secretome/annotation/ERR022075/ERR02
 
 
 
-### Moving files between your instance and your laptop
+# Moving files between your instance and your laptop
 
 Finally, we need to get results we produced to our own computers.There are also several ways to do this, but it's *always* easier
 to start the transfer locally. **This means if you're using a transfer program, it needs to be
