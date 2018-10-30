@@ -10,11 +10,13 @@ keypoints:
 - "Predictions need to be validated by laboratory experiments"
 ---
 
+We predicted if proteins are secreted based on the presence of signal peptides. 
+
 ## Wrapup
 
 > ## Exercise
 > 
-> Compare your lists to the pre-computed lists at [psort](http://db.psort.org/) for *E.coli* and *S.aureus*. Do you find proteins in common? Do you find differences? Discuss with your neighbor.
+> Compare your lists to the pre-computed lists at [PSORTdb](http://db.psort.org/) for *E.coli* K-12 and *S.aureus* N315. Do you find proteins in common? Do you find differences? Why? Discuss with your neighbor.
 >
 >
 {: .challenge}
