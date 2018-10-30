@@ -13,7 +13,7 @@ keypoints:
 ---
 # Bioinformatics
 
-Many bioinformatics tools can only be used through a command line interface, or have extra capabilities in the command line version that are not available in a graphical user interface. In these lessons we will therefor first introduce the Unix shell and than apply this knowlegde to the assembly of a bacterial genome and to making predictions about genes on the genome.
+Many bioinformatics tools can only be used through a command line interface, or have extra capabilities in the command line version that are not available in a graphical user interface. In these lessons we will first introduce the Unix shell and then apply this knowlegde to the assembly of a bacterial genome and make predictions about genes on the genome.
 
 ## Introduction to the command line
 
@@ -41,6 +41,6 @@ The sequence of microbial genomes can be used to predict proteins that are secre
 ## Overview of our Data Set
  *Escherichia coli* strain K-12 holds a key position as a model organism in studies of molecular biology, biochemistry, genetics and biotechnology. The sequence we will be using was cited by several [publications](https://www.ncbi.nlm.nih.gov/pmc/?term=ERX008638+or+ERR022075), especially in the context of genome assembly. Here, we will trim, assemble and annotate the genome of *E. coli* K-12 and will predict secreted proteins from it. 
  
-In addition, we will also be using an already assembled genome of a *Staphylococcus aureus* isolate which is an [lineage often associated with methicillin resistance (MRSA)](https://www.ncbi.nlm.nih.gov/pmc/?term=Staphylococcus+aureus+%2B+USA300).
+In addition, we will also be using an already assembled genome of a *Staphylococcus aureus* isolate which is a [lineage often associated with methicillin resistance (MRSA)](https://www.ncbi.nlm.nih.gov/pmc/?term=Staphylococcus+aureus+%2B+USA300).
 
 {% include links.md %}
