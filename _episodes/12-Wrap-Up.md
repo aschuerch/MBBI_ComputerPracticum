@@ -7,7 +7,7 @@ questions:
 objectives:
 - "Compare your findings with predictions by other prediction programs"
 keypoints:
-- "Predictions need to be validated by laboratory experiments"
+- "Computational predictions need to be validated by laboratory experiments"
 ---
 
 We predicted if proteins are secreted based on the presence of signal peptides. In order to confirm the cellular location of these proteins, laboratory experiments are necessary.
