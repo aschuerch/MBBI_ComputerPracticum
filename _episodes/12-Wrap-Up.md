@@ -10,7 +10,7 @@ keypoints:
 - "Predictions need to be validated by laboratory experiments"
 ---
 
-We predicted if proteins are secreted based on the presence of signal peptides. 
+We predicted if proteins are secreted based on the presence of signal peptides. In order to confirm the cellular location of these proteins, laboratory experiments are necessary.
 
 ## Wrapup
 
