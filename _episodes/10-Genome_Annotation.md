@@ -193,7 +193,7 @@ if the solution differs?
 > ## Challenge: Annotation of *S.aureus* 
 >
 > In addition to *E.coli*, there is an assembled, but unannotated genome of *S.aureus* on your remote machine. Can you annotate this genome as well?
-
+>
 > Hint:
 > ~~~
 > $ cd ~/112018_Secretome/assembly/S_aureus
