@@ -65,12 +65,13 @@ First, let's navigate to the correct directory.
 
 ~~~
 $ cd
-$ cd ~/112018/reads
+$ cd ~/112018_Secretome/reads
 $ ls
+$ ERR022075_1.fastq  ERR022075_2.fastq
 ~~~
 {: .bash}
 
-These files contain the short read data of *E.coli*. Before we start to assemble the short reads into contigs, we have to trim the low quality sequences away. 
+These files contain the short read data of *E.coli* K-12. Before we start to assemble the short reads into contigs, we have to trim the low quality sequences away. 
 
 
 # Cleaning Reads
@@ -127,13 +128,11 @@ clean your data.
 A complete command for trimming with seqtk will look something like this:
 
 ~~~
-
-
-$ seqtk trimfq -q 0.01 ERR022075_1.fastq.gz > ERR022075_1.trimmed.fastq
+$ seqtk trimfq -q 0.01 RawReads.fastq.gz > Trimmed.fastq
 ~~~
 {: .bash}
 
-Seqtk conveniently compresses our fastq file while trimming, which means we do not need the .gz ending anymore.
+Seqtk conveniently de-compresses our fastq file while trimming, which means we do not need the .gz ending anymore.
 
 ## Trimming
 
