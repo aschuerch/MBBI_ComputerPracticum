@@ -27,18 +27,21 @@ The lessons aim to introduce basic skills in the Unix shell and are designed for
 - Unix Shell (command-line: ls, cd, mkdir, cp, rm, wc, grep, cut, columns, head, tail, less etc,)
 
 
-## Predict secreted proteins from sequenced DNA
+## Microbial Genomics
+
+### Predict secreted proteins from sequenced DNA
 
 The sequence of microbial genomes can be used to predict proteins that are secreted by bacteria. However, before we obtain a bacterial genome sequence from DNA sequencing data, we have to clean the data and assemble it.
 
-### Microbial Genomics
+We will carry out the following steps:
 
 - Trimming of sequencing data
 - Assembly of high-throughput sequence data
 - Annotation of genomes
 - Prediction of secreted proteins
 
-## Overview of our Data Set
+### Overview of our Data Set
+
  *Escherichia coli* strain K-12 holds a key position as a model organism in studies of molecular biology, biochemistry, genetics and biotechnology. The sequence we will be using was cited by several [publications](https://www.ncbi.nlm.nih.gov/pmc/?term=ERX008638+or+ERR022075), especially in the context of genome assembly. Here, we will trim, assemble and annotate the genome of *E. coli* K-12 and will predict secreted proteins from it. 
  
 In addition, we will also be using an already assembled genome of a *Staphylococcus aureus* isolate which is a [lineage often associated with methicillin resistance (MRSA)](https://www.ncbi.nlm.nih.gov/pmc/?term=Staphylococcus+aureus+%2B+USA300).
