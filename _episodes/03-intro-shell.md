@@ -199,7 +199,7 @@ sra_metadata  untrimmed_fastq
 alphabetical order,
 arranged neatly into columns.
 We can make its output more comprehensible by using the **flag** `-F`,
-which tells `ls` to add a trailing `/` to the names of directories:
+which tells `ls` to classify the files:
 
 ~~~
 $ ls -F
@@ -211,7 +211,7 @@ sra_metadata/  untrimmed_fastq/
 ~~~
 {: .output}
 
-Anything with a "/" after it is a directory. Things with a "*" after them are programs. If
+Anything with a "/" after it is a directory. Things with a "*" after them are programs. Anything with an '@' is a symbolic link. If
 there are no decorations, it's a file.
 
 `ls` has lots of other options. To find out what they are, we can type:
