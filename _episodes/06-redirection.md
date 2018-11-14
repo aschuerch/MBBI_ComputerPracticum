@@ -10,7 +10,6 @@ objectives:
 - "Employ the `grep` command to search for information within files."
 - "Print the results of a command to a file."
 - "Construct command pipelines with two or more stages."
-- "Clean FASTQ reads using seqtk"
 keypoints:
 - "`grep` is a powerful search tool with many options for customization."
 - "`>`, `>>`, and `|` are different ways of redirecting output."
