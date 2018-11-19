@@ -45,10 +45,10 @@ Suppose we want to see how many reads in our file have really bad segments conta
 > 
 > In this lesson, we're going to be manually searching for strings of `N`s within our sequence
 > results to illustrate some principles of file searching. It can be really useful to do this
-> type of searching to get a feel for the quality of your sequencing results, however, in you 
+> type of searching to get a feel for the quality of your sequencing results, however, in 
 > research you will most likely use a bioinformatics tool that has a built-in program for
 > filtering out low-quality reads. You'll learn how to use one such tool in 
-> [a later lesson](http://www.datacarpentry.org/wrangling-genomics/00-readQC/).
+> [a later lesson](https://aschuerch.github.io/MBBI_ComputerPracticum/07-Trimming/index.html).
 > 
 {: .callout}
 
@@ -67,7 +67,8 @@ each of these reads. To get all of this information, we will return the line
 immediately before each match and the two lines immediately after each match.
 
 We can use the `-B` argument for grep to return a specific number of lines before
-each match and the `-A` argument to return a specific number of lines after each matching line. Here we want the line before and the two lines after each 
+each match and the `-A` argument to return a specific number of lines after each matching line. 
+Here we want the line before and the two lines after each 
 matching line so we add `-B1 -A2` to our grep command.
 
 ~~~
