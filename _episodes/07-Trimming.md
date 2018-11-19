@@ -71,7 +71,7 @@ $ ERR022075_1.fastq  ERR022075_2.fastq
 ~~~
 {: .bash}
 
-These files contain the short read data of *E.coli* K-12. Before we start to assemble the short reads into contigs, we have to trim the low quality sequences away. 
+These files contain the short read data of *E.coli* K-12 as [paired-end data](https://www.illumina.com/science/technology/next-generation-sequencing/paired-end-vs-single-read-sequencing.html). Before we start to assemble the short reads into contigs, we have to trim the low quality sequences away. 
 
 
 # Cleaning Reads
