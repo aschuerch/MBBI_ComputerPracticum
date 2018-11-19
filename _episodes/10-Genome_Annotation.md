@@ -11,8 +11,8 @@ objectives:
 - "Annotate a genome"
 keypoints:
 - "Genome annotation includes prediction of protein-coding genes, as well as other functional genome units"
-- "It often starts by identifying open reading frames"
-- "Predicted sequences are further analysed with BLAST"
+- "Annotation starts by identifying open reading frames"
+- "Predicted protein-coding sequences are further analysed with BLAST"
 - "Larger DNA sequences or genomes require automated prediction and annotation"
 ---
 
