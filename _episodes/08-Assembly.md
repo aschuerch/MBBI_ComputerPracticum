@@ -18,18 +18,7 @@ Sequence assembly means the alignment and merging of reads in order to reconstru
 The assembler we will run is [SPAdes](http://cab.spbu.ru/software/spades/). SPAdes generates a final assembly from multiple kmers. A list of kmers is automatically selected by SPAdes using the maximum read length of the input data, and each individual kmer contributes to the final assembly. If desired, a list of kmers can be specified with the -k flag which will override automatic kmer selection.
 
 
-## Preparation
-First of all, let's make an assembly folder in the project
-
-~~~
-$ cd ~/112018_Secretome
-$ mkdir assembly
-~~~
-{: .bash}
-
-
-
-To run SPAdes we will use the spades.py command with the --only-assembler option as the reads have already been trimmed, -o for the output folder, -1 for the path to the forward reads, -2 for the path to the reverse reads. To speed up the process, we will be using only two k-mer sizes of 33 and 55 basepair.
+To run SPAdes we will use the spades.py command with the --only-assembler option as the reads have already been trimmed, -o for the output folder, -1 for the path to the forward reads, -2 for the path to the reverse reads. To speed up the process, we will be using only two k-mer sizes of 33 and 55 basepair. Normally we would use a range of different k-mers of which SPAdes would select the best result.
 
 ~~~
 $ cd ~/112018_Secretome/trimmed
