@@ -19,7 +19,7 @@ The assembler we will run is [SPAdes](http://cab.spbu.ru/software/spades/). SPAd
 
 
 ## Preparation
-First of all, let's make an an *E.coli* folder in the assembly folder of the project
+First of all, let's make an assembly folder in the project
 
 ~~~
 $ cd ~/112018_Secretome
