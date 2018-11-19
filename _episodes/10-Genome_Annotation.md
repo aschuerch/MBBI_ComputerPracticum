@@ -64,7 +64,7 @@ $ cut -f 1,2 -d "_" scaffolds.fasta | sed s/NODE/C/g > ERR022075.fasta
 Let's see what this has done. First let's have a look at the original files.
 
 ~~~
-$ head -n10 ERR022075/scaffolds.fasta
+$ head -n10 scaffolds.fasta
 ~~~
 {: .bash}
 
