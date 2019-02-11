@@ -54,7 +54,7 @@ Good documentation is key to avoiding this issue, and luckily enough, recording 
 For this project, some files have been organized already in this directory tree:
 
 
-![directory_tree](../fig/MMBI_files.png)
+![directory_tree](../fig/MBBI_files.jpg)
 
 We will add more files and directories as we go.
 
@@ -65,7 +65,7 @@ First, let's navigate to the correct directory.
 
 ~~~
 $ cd
-$ cd ~/112018_Secretome/reads
+$ cd ~/Secretome_prediction/reads
 $ ls
 $ ERR022075_1.fastq  ERR022075_2.fastq
 ~~~
@@ -139,16 +139,16 @@ Seqtk conveniently de-compresses our fastq file while trimming, which means we d
 Now we will run seqtk trimfq on our data. To begin, create the folder that will hold our trimmed data and then navigate to your `untrimmed` data directory:
 
 ~~~
-$ cd ~/112018_Secretome
+$ cd ~/Secretome_prediction
 $ mkdir trimmed
-$ cd ~/112018_Secretome/reads
+$ cd ~/Secretome_prediction/reads
 ~~~
 {: .bash}
 
 We are going to run seqtk on one sample giving it an error rate threshold of 0.01 which indicates the base call accuracy. We request that, after trimming, the chances that a base is called incorrectly are only 1 in 10000.
 
 ~~~
-$ seqtk trimfq -q 0.01 ERR022075_1.fastq > ~/112018_Secretome/trimmed/ERR022075_1.trimmed.fastq
+$ seqtk trimfq -q 0.01 ERR022075_1.fastq > ~/Secretome_prediction/trimmed/ERR022075_1.trimmed.fastq
 ~~~
 {: .bash}
 
