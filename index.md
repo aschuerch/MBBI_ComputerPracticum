@@ -12,8 +12,8 @@ The lessons use the
 > ## Schedule
 > 
 > 
-> 1.  Thursday,07-02-2019: Setup
-> 2.  Tuesday, 12-02-2019: Intro cloud computing and shell, assembly, protein prediction
+> 1.  Thursday: Setup
+> 2.  Tuesday: Intro cloud computing and shell, assembly, protein prediction
 
 > ## Data
 >
