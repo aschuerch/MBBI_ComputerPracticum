@@ -44,13 +44,13 @@ Then, lets run signalP on the *E.coli* proteins
 
 ~~~
 $ cd ~/Secretome_prediction/prediction
-$ signalp -t gram- -m Ecoli.fasta  ~/Secretome_prediction/annotation/ERR022075/ERR022075.faa
+$ signalp -t gram- -m Ecoli_secreted.fasta  ~/Secretome_prediction/annotation/ERR022075/ERR022075.faa
 ~~~
 {: .bash}
 
 > ## Exercise
 > 
-> Can you find proteins with a signal peptide in the *S.aureus* genome?
+> Generate a list of proteins with a signal peptide from the *S.aureus* genome.
 >
 >
 >> ## Solution
@@ -59,7 +59,7 @@ $ signalp -t gram- -m Ecoli.fasta  ~/Secretome_prediction/annotation/ERR022075/E
 >> 
 >> ~~~ 
 >> $ cd ~/Secretome_prediction/prediction
->> $ signalp -t gram+ -m Saureus.fasta  ~/Secretome_prediction/annotation/S_aureus/S_aureus.faa
+>> $ signalp -t gram+ -m Saureus_secreted.fasta  ~/Secretome_prediction/annotation/S_aureus/S_aureus.faa
 >> ~~~
 >> {: .bash}
 >> {: .output}
