@@ -23,10 +23,10 @@ Now that we have assembled the sequencing reads into contigs the next step to do
 Genome annotation includes prediction of protein-coding genes, as well as other functional genome units such as structural RNAs, tRNAs, small RNAs, pseudogenes, control regions, direct and inverted repeats, insertion sequences, transposons and other mobile elements. It starts by identifying open reading frames (ORFs). Predicted sequences are further analysed to search for similarity to known elements, for example with BLAST.
 
 
-Have a look at the 50 first lines of your genome.
+Have a look at the first 3000 characters of the assembly.
 
 ~~~
-$ head -n50 ~/Secretome_prediction/assembly/ERR022075.fasta
+$ head -c 3000 ~/Secretome_prediction/assembly/ERR022075.fasta
 ~~~
 {: .source}
 
@@ -65,8 +65,7 @@ The parameter --outdir tells PROKKA which output directory to write to. This nee
 The parameter --prefix assigns the sample name as a prefix to all files. If we ommit this, every PROKKA output file would have the same name. The parameter --cpus 1 tells it to use 1 cpu.
 
 ~~~
-$ export LC_ALL=C
-$ prokka --outdir ~/Secretome_prediction/annotation/ERR022075 --prefix ERR022075 ~/Secretome_prediction/assembly/ERR022075/ERR022075.fasta --cpus 1
+$ prokka --outdir ~/Secretome_prediction/annotation/ERR022075 --prefix ERR022075 ~/Secretome_prediction/assembly/ERR022075.fasta --cpus 1
 ~~~
 {: .bash}
 
@@ -108,7 +107,7 @@ if the solution differs?
 
 > ## Challenge: Annotation of *S.aureus* 
 >
-> In addition to *E.coli*, there is an assembled, but unannotated genome of *S.aureus* on your remote machine. Can you annotate this genome as well?
+> In addition to *E.coli*, there is an assembled, but unannotated genome of *S.aureus* on your remote machine. Annotate this genome as well.
 >
 > Hint:
 > ~~~
