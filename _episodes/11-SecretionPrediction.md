@@ -35,7 +35,7 @@ bacteria, or Gram-positive bacteria with the -t option. The -m option will give 
 First, let's make a new folder
 
 ~~~
-$ cd ~/112018_Secretome
+$ cd ~/Secretome_prediction
 $ mkdir prediction
 ~~~
 {: .bash}
@@ -43,8 +43,8 @@ $ mkdir prediction
 Then, lets run signalP on the *E.coli* proteins
 
 ~~~
-$ cd ~/112018_Secretome/prediction
-$ signalp -t gram- -m Ecoli.fasta  ~/112018_Secretome/annotation/ERR022075/ERR022075.faa
+$ cd ~/Secretome_prediction/prediction
+$ signalp -t gram- -m Ecoli.fasta  ~/Secretome_prediction/annotation/ERR022075/ERR022075.faa
 ~~~
 {: .bash}
 
@@ -58,8 +58,8 @@ $ signalp -t gram- -m Ecoli.fasta  ~/112018_Secretome/annotation/ERR022075/ERR02
 >>  
 >> 
 >> ~~~ 
->> $ cd ~/112018_Secretome/prediction
->> $ signalp -t gram+ -m Saureus.fasta  ~/112018_Secretome/annotation/S_aureus/S_aureus.faa
+>> $ cd ~/Secretome_prediction/prediction
+>> $ signalp -t gram+ -m Saureus.fasta  ~/Secretome_prediction/annotation/S_aureus/S_aureus.faa
 >> ~~~
 >> {: .bash}
 >> {: .output}

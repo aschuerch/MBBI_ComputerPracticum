@@ -21,8 +21,8 @@ The assembler we will run is [SPAdes](http://cab.spbu.ru/software/spades/). SPAd
 To run SPAdes we will use the spades.py command with the --only-assembler option as the reads have already been trimmed, -o for the output folder, -1 for the path to the forward reads, -2 for the path to the reverse reads. To speed up the process, we will be using only two k-mer sizes of 33 and 55 basepair. Normally we would use a range of different k-mers of which SPAdes would select the best result.
 
 ~~~
-$ cd ~/112018_Secretome/trimmed
-$ spades.py -1 ERR022075_1.trimmed.fastq -2 ERR022075_2.trimmed.fastq -k 33,55 -o ~/112018_Secretome/assembly/ERR022075
+$ cd ~/Secretome_prediction/trimmed
+$ spades.py -1 ERR022075_1.trimmed.fastq -2 ERR022075_2.trimmed.fastq -k 33,55 -o ~/Secretome_prediction/assembly/ERR022075
 ~~~
 {: .bash}
 

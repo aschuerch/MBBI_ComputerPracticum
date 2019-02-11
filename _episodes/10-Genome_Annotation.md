@@ -26,7 +26,7 @@ Genome annotation includes prediction of protein-coding genes, as well as other 
 Have a look at the 50 first lines of your genome.
 
 ~~~
-$ head -n50 ~/112018_Secretome/assembly/ERR022075/scaffolds.fasta
+$ head -n50 ~/Secretome_prediction/assembly/ERR022075/scaffolds.fasta
 ~~~
 {: .source}
 
@@ -57,7 +57,7 @@ The names of the contigs produced by SPades are quite long. PROKKA needs name wh
 
 ~~~
 $ export LC_ALL=C
-$ cd ~/112018_Secretome/assembly/ERR022075
+$ cd ~/Secretome_prediction/assembly/ERR022075
 $ cut -f 1,2 -d "_" scaffolds.fasta | sed s/NODE/C/g > ERR022075.fasta  
 ~~~
 
@@ -140,7 +140,7 @@ These are the last few lines of our output. Every line has a unique number.
 We still need to make a new folder to contain our annotation results.
 
 ~~~
-$ cd ~/112018_Secretome
+$ cd ~/Secretome_prediction
 $ mkdir annotation
 ~~~
 {: .bash}
@@ -150,14 +150,14 @@ The parameter --outdir tells PROKKA which output directory to write to. This nee
 The parameter --prefix assigns the sample name as a prefix to all files. If we ommit this, every PROKKA output file would have the same name. The parameter --cpus 1 tells it to use 1 cpu.
 
 ~~~
-$ prokka --outdir ~/112018_Secretome/annotation/ERR022075 --prefix ERR022075 ~/112018_Secretome/assembly/ERR022075/ERR022075.fasta --cpus 1
+$ prokka --outdir ~/Secretome_prediction/annotation/ERR022075 --prefix ERR022075 ~/Secretome_prediction/assembly/ERR022075/ERR022075.fasta --cpus 1
 ~~~
 {: .bash}
 
 Let's check the output:
 
 ~~~
-$ cd ~/112018_Secretome/annotation/
+$ cd ~/Secretome_prediction/annotation/
 $ cat */*.txt
 ~~~
 {: .bash}
@@ -178,7 +178,7 @@ The .txt files contain some statistics on how many annotated genes are found etc
 > >
 > > 
 > > ~~~
-> > $ cd ~/112018_Secretome/annotation/
+> > $ cd ~/Secretome_prediction/annotation/
 > > $ grep CDS */*.txt
 > >  
 > > CDS: 4235
@@ -196,14 +196,14 @@ if the solution differs?
 >
 > Hint:
 > ~~~
-> $ cd ~/112018_Secretome/assembly/S_aureus
+> $ cd ~/Secretome_prediction/assembly/S_aureus
 > ~~~
 > > ## Solution
 > >
 > > 
 > > ~~~
-> > $ cd ~/112018_Secretome/assembly/S_aureus 
-> > prokka --outdir ~/112018_Secretome/annotation/S_aureus --prefix S_aureus ~/112018_Secretome/assembly/S_aureus/NC_007793.1.fasta --cpus 1
+> > $ cd ~/Secretome_prediction/assembly/S_aureus 
+> > prokka --outdir ~/Secretome_prediction/annotation/S_aureus --prefix S_aureus ~/Secretome_prediction/assembly/S_aureus/NC_007793.1.fasta --cpus 1
 > > ~~~
 > > {: .output}
 > {: .solution}
