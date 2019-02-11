@@ -162,6 +162,7 @@ Notice that we needed to redirect the output to a file. If we don't do that, the
 > > ## Solution
 > > 
 > > `$ cd ~/Secretome_prediction/reads`
+> > 
 > > `$ seqtk trimfq -q 0.01 ERR022075_2.fastq > ~/Secretome_prediction/ERR022075_2.trimmed.fastq`
 > >
 > {: .solution}
