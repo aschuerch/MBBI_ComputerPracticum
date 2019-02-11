@@ -41,12 +41,12 @@ This lesson covers how to log into, and out of, an *already running* cloud insta
 
 ## Background to cloud computing
 
-To access the pre-configured workshop data, you'll need to use our log-in credentials (user name and password). A user name will be assigned to you at the workshop. In the following, always replace dcuser with your user name 
+To access the pre-configured workshop data, you'll need to use our log-in credentials (user name and password). A user name will be assigned to you at the workshop. In the following, always replace login with your user name 
 and the password with the password assigned to you.
 
 **Log-in Credentials (case-sensitive!)**
 
-- Username: dcuser
+- Username: login
 - Password: password
 
 But first, you need a place to log *into*! To find the instance that's attached to that data,
@@ -108,7 +108,7 @@ D. You should now be connected!
 A. Open the terminal and type the following command substituting 'ip_address' for the IP address your instructor will provide (or the IP address of an instance you have provisioned yourself). *Be sure to pay attention to capitalization and spaces*<br>
 
 ~~~
-$ ssh dcuser@ip_address
+$ ssh login@ip_address
 ~~~
 {: .bash}
 
@@ -138,7 +138,7 @@ If you are *completely* done with your AWS instance, you will need to **terminat
 To log off, use the `exit` command in the same terminal you connected with. This will close the connection, and your terminal will go back to showing your local computer:
 
 ~~~
-dcuser@ip-172-31-62-209 $ exit
+login@ip-172-31-62-209 $ exit
 
 Amandas-MacBook-Pro-3 $
 ~~~
