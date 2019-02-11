@@ -20,7 +20,7 @@ The assembler we will run is [SKESA](https://github.com/ncbi/SKESA). SKESA is a 
 
 ~~~
 $ cd ~/Secretome_prediction/trimmed
-$ skesa --cores 2 --memory 32 --fastq -1 ERR022075_1.trimmed.fastq -2 ERR022075_2.trimmed.fastq > ~/Secretome_prediction/assembly/ERR022075.fasta
+$ skesa --cores 2 --memory 32 --fastq ERR022075_1.trimmed.fastq ERR022075_2.trimmed.fastq > ~/Secretome_prediction/assembly/ERR022075.fasta
 ~~~
 {: .bash}
 
