@@ -26,7 +26,7 @@ $ skesa --cores 2 --memory 32 --fastq ERR022075_1.trimmed.fastq ERR022075_2.trim
 
 This will take a while. Try not to interrupt your connection to the server while the calculation takes place.
 
-You might notice that the sequences are no longer in fastq format but in (fasta format)[https://en.wikipedia.org/wiki/FASTA_format].
+You might notice that the sequences are no longer in fastq format but in [fasta format](https://en.wikipedia.org/wiki/FASTA_format).
 
 The header line (identifier) line, which begins with '>', gives a name and/or a unique identifier for the sequence, and may also contain additional information. Here, we get information about the contigs, their length and k-mer coverage. The remaining lines contain sequence, encoded as nucleotides (ATCG). 
 
