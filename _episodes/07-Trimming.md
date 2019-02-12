@@ -21,7 +21,7 @@ When working with high-throughput sequencing data, the raw reads you get off of 
 
 An example of the workflow we will be using for our secreted protein prediction is provided below with a brief description of each step.
 
-![scheme](../fig/MMBI_scheme.png)
+![scheme](../fig/MMBI_scheme_1.png)
 
 1. Quality control - Trimming and/or filtering reads
 2. Assembly of the trimmed reads into contigs
