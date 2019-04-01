@@ -3,9 +3,9 @@ title: "Wrapup"
 exercises: 0
 teaching: 10
 questions:
-- "Do your findings match the published data?"
+- "Do my findings match the published data?"
 objectives:
-- "Compare your findings with predictions by other prediction programs"
+- "Compare the findings with predictions by other prediction programs"
 keypoints:
 - "Computational predictions need to be validated by laboratory experiments"
 ---
