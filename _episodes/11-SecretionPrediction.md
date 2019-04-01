@@ -75,7 +75,7 @@ to start the transfer locally. **This means if you're using a transfer program, 
 installed on your local machine, not on your instance. If you're typing into a terminal,
 the terminal should not be logged into your instance, it should be showing your local computer.**
 
-FileZilla is one of many free FTP clients that allow you to move files between local and remote locations. Y
+FileZilla is one of many free FTP clients that allow you to move files between local and remote locations.
 
 It is convenient if you would like a graphical user interface to manage files and folders and if you have only a few files to move.
 
