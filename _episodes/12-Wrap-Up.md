@@ -10,13 +10,21 @@ keypoints:
 - "Computational predictions need to be validated by laboratory experiments"
 ---
 
+> ## Exercise
+> 
+> Compare your lists to the pre-computed lists at [PSORTdb](http://db.psort.org/) for *E.coli* K-12 and *S.aureus* N315. Do you find proteins in common? Do you find differences? Why? Discuss with your neighbor.
+>
+>
+{: .challenge}
+
+
 We predicted if proteins are secreted based on the presence of signal peptides. In order to confirm the cellular location of these proteins, laboratory experiments are necessary.
 
 ## Wrapup
 
-> ## Exercise
+> ## Summary
 > 
-> Compare your lists to the pre-computed lists at [PSORTdb](http://db.psort.org/) for *E.coli* K-12 and *S.aureus* N315. Do you find proteins in common? Do you find differences? Why? Discuss with your neighbor.
+> What have you done today? Write your name and short summary (5 sentences) into the etherpad.
 >
 >
 {: .challenge}
