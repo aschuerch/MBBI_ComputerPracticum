@@ -18,3 +18,6 @@ signalP
 
 PSORTdb
 :   [Reference](https://academic.oup.com/nar/article/44/D1/D663/2503083?sid=3571f1e4-50d1-4914-9b9a-5b5a9357ab26)
+
+SKESA
+:   [Reference](doi.org/10.1186/s13059-018-1540-z)
