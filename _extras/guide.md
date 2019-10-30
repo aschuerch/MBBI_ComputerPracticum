@@ -5,8 +5,8 @@ title: "Instructor Notes"
 
 **Details about the server**
 
-...
 
+Login to ...
 
 
 **Update collaborative document**
