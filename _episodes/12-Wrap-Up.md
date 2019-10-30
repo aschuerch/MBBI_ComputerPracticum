@@ -24,7 +24,7 @@ We predicted if proteins are secreted based on the presence of signal peptides. 
 
 > ## Summary
 > 
-> What have you done today? Write your name and short summary (5 sentences) into the etherpad.
+> What have you done today? Write your name and a short summary of about 5 sentences on the collaborative document.
 >
 >
 {: .challenge}
