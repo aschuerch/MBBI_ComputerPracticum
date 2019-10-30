@@ -3,7 +3,16 @@ layout: page
 title: "Instructor Notes"
 ---
 
-Details about the AMI machine
+**Details about the server**
+
+...
+
+
+
+**Update collaborative document**
+
+Before starting the practicum, remove previous content at https://pad.carpentries.org/MBBI_ComputerPracticum after line 36
+
 
 **Share screen with participants**
 
