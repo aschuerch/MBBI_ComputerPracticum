@@ -20,13 +20,19 @@ An FTP client will help you transfer files easily between your computer and the 
 - At the workshop we will give you additional information (e.g. host, username, port) to connect
 
 ## Windows
-### Putty
-You will need a terminal program to access the remote machine. This is already available on Mac and Linux.
+### Putty or MobaXterm
+You will need a terminal program to access the remote machine. This is already available on Mac and Linux. For Windows, you can choose between Putty or MobaXterm
+#### Putty
 - Go to the [Putty download page](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
 - Click on putty.exe link to download the install file
 - To use it, double-click on the download file
 - Follow the installation instructions, if any 
- 
+
+#### MobaXterm
+- Go to the[MobaXterm download page](https://mobaxterm.mobatek.net/download.html)
+- Download the free version
+- To use it, double-click on the download file
+- Follow the installation instructions, if any 
 
 
 
