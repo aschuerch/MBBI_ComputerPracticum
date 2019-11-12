@@ -3,28 +3,28 @@ layout: page
 title: "Instructor Notes"
 ---
 
-**Lock/unlock user accounts**
+## Lock/unlock user accounts
 
 Login to klif2.uu.nl
 
-# unlock with
+unlock with
 ```
 sudo su
 for i in {1..20}; do passwd -u mbbi$i; done
 ```
 
-# lock with
+lock with
 ```
 sudo su
 for i in {1..20}; do passwd -l mbbi$i; done
 ```
 
-**Update collaborative document**
+## Update collaborative document
 
 Before starting the practicum, remove previous content at https://pad.carpentries.org/MBBI_ComputerPracticum after line 36
 
 
-**Share screen with participants**
+## Share screen with participants
 
 Share instructor screen with shellshare https://shellshare.net/
 ```
@@ -33,7 +33,7 @@ python shellshare
 python shellshare -r workshop
 ```
 
-**Whitelist users with too many login attempts**
+## Whitelist users with too many login attempts
 
 
 1. Find out about the IP address of the learners' computer by asking them to go to https://www.whatsmyip.org/
