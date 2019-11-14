@@ -75,7 +75,7 @@ AGCACGATAAAGGTGCTGAACATGTTCAGTACCAGCGCAGCAACGACGTATTTCGGTTCC
 > > 5. 238
 > > 6. 216
 > > 7. 198
-> > ~~~
+> >
 > > {: .output}
 > {: .solution}
 {: .challenge}
