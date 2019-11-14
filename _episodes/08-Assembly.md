@@ -72,30 +72,29 @@ AGCACGATAAAGGTGCTGAACATGTTCAGTACCAGCGCAGCAACGACGTATTTCGGTTCC
 > > ## Solution
 > >
 > > 
-> > ~~~
-> > $ grep -c ">kmer21" allkmers.txt 
+> > 
+> > `$ grep -c ">kmer21" allkmers.txt `
 > > 1256
-> > $ grep -c ">kmer27" allkmers.txt 
+> > `$ grep -c ">kmer27" allkmers.txt `
 > > 602
-> > $ grep -c ">kmer33" allkmers.txt 
+> >` $ grep -c ">kmer33" allkmers.txt `
 > > 470
-> > $ grep -c ">kmer39" allkmers.txt 
+> > `$ grep -c ">kmer39" allkmers.txt `
 > > 384
-> > $ grep -c ">kmer45" allkmers.txt 
+> >` $ grep -c ">kmer45" allkmers.txt `
 > > 287
-> > $ grep -c ">kmer51" allkmers.txt 
+> >` $ grep -c ">kmer51" allkmers.txt `
 > > 256
-> > $ grep -c ">kmer57" allkmers.txt 
+> >` $ grep -c ">kmer57" allkmers.txt `
 > > 238
-> > $ grep -c ">kmer63" allkmers.txt 
+> >` $ grep -c ">kmer63" allkmers.txt `
 > > 222
-> > $ grep -c ">kmer71" allkmers.txt 
+> >` $ grep -c ">kmer71" allkmers.txt `
 > > 216
-> > $ grep -c ">kmer77" allkmers.txt 
+> >` $ grep -c ">kmer77" allkmers.txt `
 > > 208
-> > $ grep -c ">kmer83" allkmers.txt 
+> >` $ grep -c ">kmer83" allkmers.txt `
 > > 198
-
 > > ~~~
 > > {: .output}
 > {: .solution}
