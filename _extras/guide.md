@@ -29,7 +29,6 @@ Before starting the practicum, remove previous content at https://pad.carpentrie
 Share instructor screen with shellshare https://shellshare.net/
 ```
 wget -qO shellshare https://get.shellshare.net
-python shellshare
 python shellshare -r workshop
 ```
 
