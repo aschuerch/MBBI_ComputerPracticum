@@ -128,11 +128,10 @@ clean your data.
 A complete command for trimming with seqtk will look something like this:
 
 ~~~
-$ seqtk trimfq -q 0.01 RawReads.fastq.gz > Trimmed.fastq
+$ seqtk trimfq -q 0.01 RawReads.fastq> Trimmed.fastq
 ~~~
 {: .bash}
 
-Seqtk conveniently de-compresses our fastq file while trimming, which means we do not need the .gz ending anymore.
 
 ## Trimming
 
