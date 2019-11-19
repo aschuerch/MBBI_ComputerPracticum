@@ -73,15 +73,15 @@ Let's check the output:
 
 ~~~
 $ cd ~/Secretome_prediction/annotation/
-$ cat */*.txt
+$ ls
 ~~~
 {: .bash}
 
-The .txt files contain some statistics on how many annotated genes are found etc. 
+PROKKA creates a range of output files, including a file containing the protein sequences (.faa). Take a moment to check the files out with 'head'.
 
 > ## Challenge: How many coding regions did PROKKA find in the contigs??
 >
-> Find out how many coding regions there are in the *E. coli* isolate. 
+> Find out how many coding regions there are in the *E. coli* isolate. The ERR022075.txt files contain some statistics on how many annotated genes are found etc.  
 >
 > Hint:
 > ~~~
@@ -93,8 +93,8 @@ The .txt files contain some statistics on how many annotated genes are found etc
 > >
 > > 
 > > ~~~
-> > $ cd ~/Secretome_prediction/annotation/
-> > $ grep CDS */*.txt
+> > $ cd ~/Secretome_prediction/annotation/ERR022075
+> > $ grep CDS ERR022075.txt
 > >  
 > > CDS: 4235
 > > ~~~
