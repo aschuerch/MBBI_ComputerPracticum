@@ -323,19 +323,19 @@ efficiently. Let's take a few minutes to practice.
 > ## Exercise
 >
 > Now that we know about the pipe (`|`), write a single command to find the number of reads 
-> in the `SRR098026.fastq` file that contain at least one region of 5 unknown
+> in the `SRR098026.fastq` file that contain at least one region of 8 unknown
 > nucleotides in a row. Do this without creating 
 > a new file.
 >
 >> ## Solution
 >> 
 >> ~~~
->> $ grep "NNNNN" SRR098026.fastq | wc -l
+>> $ grep "NNNNNNNN" SRR098026.fastq | wc -l
 >> ~~~
 >> {: .bash}
 >>
 >> ~~~
->> 186
+>>  223
 >> ~~~
 >> {: .output}
 >> 
