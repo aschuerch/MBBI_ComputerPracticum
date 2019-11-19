@@ -185,7 +185,7 @@ four to get the number of sequences that match our search pattern.
 >> {: .bash}
 >> 
 >> ~~~
->> 249
+>> 249 bad_reads.txt
 >> ~~~
 >> {: .output}
 >>
