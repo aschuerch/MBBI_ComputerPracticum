@@ -18,7 +18,7 @@ keypoints:
 {: .challenge}
 
 
-We predicted if proteins are secreted based on the presence of signal peptides. In order to confirm the cellular location of these proteins, laboratory experiments are necessary.
+We predicted if proteins are secreted based on the presence of signal peptides. Prediction can be different, depending on the method used for prediction, but also based on annotation differences, differences in ORF calling etc. In order to confirm the cellular location of these proteins, laboratory experiments are necessary.
 
 ## Wrapup
 
