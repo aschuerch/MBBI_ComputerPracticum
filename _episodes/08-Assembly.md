@@ -71,7 +71,7 @@ AGCACGATAAAGGTGCTGAACATGTTCAGTACCAGCGCAGCAACGACGTATTTCGGTTCC
 >
 > Hint:
 > ~~~
-> $ grep -c  ">kmer21" allkmers.txt
+> $ grep -c  "kmer21" allkmers.txt
 > ~~~
 > prints a count of matching lines for the input file.
 > 
