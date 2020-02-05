@@ -44,9 +44,19 @@ Then, lets run signalP on the *E.coli* proteins
 
 ~~~
 $ cd ~/Secretome_prediction/prediction
-$ signalp -t gram- -m Ecoli_secreted.fasta  ~/Secretome_prediction/annotation/ERR022075/ERR022075.faa
+$ signalp -org gram- -prefix Ecoli_secreted -fasta  ~/Secretome_prediction/annotation/ERR022075/ERR022075.faa
 ~~~
 {: .bash}
+
+where
+~~~
+  -org string
+    	Organism. Archaea: 'arch', Gram-positive: 'gram+', Gram-negative: 'gram-' or Eukarya: 'euk' (default "euk")
+  -prefix string
+    	Output files prefix. (default "Input file prefix")
+  -fasta string
+    	Input file in fasta format.
+~~~
 
 > ## Exercise
 > 
@@ -59,7 +69,7 @@ $ signalp -t gram- -m Ecoli_secreted.fasta  ~/Secretome_prediction/annotation/ER
 >> 
 >> ~~~ 
 >> $ cd ~/Secretome_prediction/prediction
->> $ signalp -t gram+ -m Saureus_secreted.fasta  ~/Secretome_prediction/annotation/S_aureus/S_aureus.faa
+>> $ signalp -org gram+ -prefix Saureus_secreted  -fasta ~/Secretome_prediction/annotation/S_aureus/S_aureus.faa
 >> ~~~
 >> {: .bash}
 >> {: .output}
