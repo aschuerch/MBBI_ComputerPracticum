@@ -76,6 +76,7 @@ where
 > {: .solution}
 {: .challenge}
 
+Alternatively, you can download the proteins to your own laptop and run them through the [Signal-P server](http://www.cbs.dtu.dk/services/SignalP/) online.
 
 
 # Moving files between your instance and your laptop
