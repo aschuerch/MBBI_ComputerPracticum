@@ -19,6 +19,10 @@ sudo su
 for i in {1..20}; do passwd -l mbbi$i; done
 ```
 
+## Print cheatsheet and list with usernames, passwords
+
+At https://aschuerch.github.io/MBBI_ComputerPracticum/files/cheatsheet.pdf
+
 ## Update collaborative document
 
 Before starting the practicum, remove previous content at https://pad.carpentries.org/MBBI_ComputerPracticum after line 36
