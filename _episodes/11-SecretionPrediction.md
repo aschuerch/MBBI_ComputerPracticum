@@ -44,7 +44,7 @@ Then, lets run signalP on the *E.coli* proteins
 
 ~~~
 $ cd ~/Secretome_prediction/prediction
-$ signalp -org gram- -prefix Ecoli_secreted -fasta  ~/Secretome_prediction/annotation/ERR022075/ERR022075.faa
+$ signalp -org gram- -mature -prefix Ecoli_secreted -fasta  ~/Secretome_prediction/annotation/ERR022075/ERR022075.faa
 ~~~
 {: .bash}
 
@@ -56,6 +56,8 @@ where
     	Output files prefix. (default "Input file prefix")
   -fasta string
     	Input file in fasta format.
+  -mature
+     Make fasta file with mature sequences
 ~~~
 
 > ## Exercise
