@@ -110,7 +110,7 @@ Lists every file in `/usr/bin` that ends in the characters `.sh`.
 > Do each of the following tasks from your current directory using a single
 > `ls` command for each.
 > 
-> 1.  List all of the files in `/usr/bin` that start with the letter 'c'.
+> 1.  List all of the files in `/usr/bin` that start with the letter 'f'.
 > 2.  List all of the files in `/usr/bin` that contain the letter 'a'. 
 > 3.  List all of the files in `/usr/bin` that end with the letter 'o'.
 >
@@ -122,7 +122,7 @@ Lists every file in `/usr/bin` that ends in the characters `.sh`.
 > what you need to solve the bonus problem.
 > 
 > > ## Solution
-> > 1. `ls /usr/bin/c*`
+> > 1. `ls /usr/bin/f*`
 > > 2. `ls /usr/bin/*a*`
 > > 3. `ls /usr/bin/*o`  
 > > Bonus: `ls /usr/bin/*[ac]*`
